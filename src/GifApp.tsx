@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import { AddCategory, GifGrid } from './components'
-
+import { AddCategory } from './components/'
+import { GifGrid } from './components';
 
 export const GifApp = () => {
 
@@ -14,8 +14,7 @@ export const GifApp = () => {
         setCategorias( [ newCategory, ...categorias ] )
 
     }
-
-
+    
     return (
 
         <>
