@@ -19,7 +19,8 @@ type Gifs = {
 
 export const getGifs  = async ( {categorias} : Props) => {
 
-    const url = `https:api.giphy.com/v1/gifs/search?api_key=css0H1azFVgZ6UJeu6X2jcnJnSmQDsKj&q=${categorias}&limit=6`;
+    const apiUrl = import.meta.env.VITE_API_URL;
+    const url = `${apiUrl}/search?api_key=css0H1azFVgZ6UJeu6X2jcnJnSmQDsKj&q=${categorias}&limit=6`;
     
     const res = await fetch (url);
 
